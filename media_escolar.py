@@ -42,7 +42,6 @@ with st.container():
     media_anual = math.ceil(media_anual * 10)
     media_anual = media_anual / 10
 
-
     if bim4 != 0:
         st.write("Sua média anual: {} ponto(s).".format(media_anual))
 
@@ -50,12 +49,12 @@ with st.container():
             st.write("Infelizmente você está reprovado sem direito a prova final de recuperação!")
             st.write("Motivo: Média anual <2.5")
         elif( media_anual>=2.5 and media_anual<6.0):
-            st.write("Com essas notdas você vai precisar fazer a prova final de recuperação!")
+            st.write("Você vai precisar fazer a prova final de recuperação!")
             nota_pf = 15-(2*media_anual)
             st.write("Na prova final você precisará tirar {:.1f} pontos  para ser aprovado(a)!".format(nota_pf))
         else:
             st.write("Parabéns você está aprovado(a) por nota!")
-
+            
 st.write("Clique aqui --> [Sigeduc-RN](https://sigeduc.rn.gov.br/sigeduc/verTelaLogin.do)")
 
 
