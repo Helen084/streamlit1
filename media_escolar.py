@@ -2,6 +2,7 @@ import streamlit as st
 st.set_page_config(page_title="EEMP 2023")
 #st.date_input(value="today",format="DD/MM/YYYY")
 st.title("Simulador da média escolar na Rede Estadual do RN")
+st.write ("Autor: Heleno Carlos. e-mail: helenoneto524@educar.rn.gov.br")
 st.write("Importante lembrar: Cuidado com as faltas. A frequência mínima para ser aprovado é de 75% ")
 st.write("Bora fazer uma simulação do  cálculo da média ?")
 
@@ -36,14 +37,15 @@ with st.container():
     media_anual = (bim1+bim2+bim3+bim4)/4
     if media_anual!=0:
         st.write("Sua média anual: {:.1f} ponto(s).".format(media_anual))
-    if (media_anual)<2.5:
-        st.write("Infelizmente você está reprovado direto. Sem direito a prova final de recuperação!")
-    elif( media_anual>=2.5 and media_anual<6.0):
-        st.write("Para ser aprovado(a) você precisa fazer a prova final de recuperação!")
-        nota_pf = 15-2*media_anual
-        st.write("Você precisará tira {:.1f} pontos na prova final!".format(nota_pf))
-    else:
-        st.write("Parabéns você está aprovado(a) por nota!")
+        if (media_anual)<2.5:
+            st.write("Infelizmente você está reprovado sem direito a prova final de recuperação!")
+            st.write("Motivo: Média anual <2.5")
+        elif( media_anual>=2.5 and media_anual<6.0):
+            st.write("Você precisa fazer a prova final de recuperação!")
+            nota_pf = 15-2*media_anual
+            st.write("Você precisará tirar {:.1f} pontos na prova final!".format(nota_pf))
+        else:
+            st.write("Parabéns você está aprovado(a) por nota!")
 
 st.write("Quer acessar o sigeduc? CLIQUE [AQUI] (https://sigeduc.rn.gov.br/sigeduc/verTelaLogin.do)")
 
