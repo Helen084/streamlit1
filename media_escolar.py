@@ -29,9 +29,9 @@ with st.container():
 
     if bim3!=0:
         if diferenca3<=0:
-            st.write("Você já está aprovado por média no 3ª Bimestre!")
+            st.write("Você já está aprovado(a) por média no 3ª Bimestre!")
         elif diferenca3>=10:
-            st.write("Você já está na prova final de recuperação. \n A sua estratégia será obter a melhor nota possível no 4ª bimeste para precisar de um valor de pontos menor na prova final.")
+            st.write("Você já está na prova final de recuperação. \n A sua estratégia será obter a melhor nota possível no 4ª bimeste para precisar de uma pontuação menor na prova final.")
         else:
             st.write("Meta de pontuação:  {:.1f} no  4ª bimestre.".format(diferenca3))
     st.write("---")
@@ -47,7 +47,7 @@ with st.container():
         st.write("Sua média anual: {} ponto(s).".format(media_anual))
 
         if (media_anual)<2.5:
-            st.write("Infelizmente você está reprovado sem direito a prova final de recuperação!")
+            st.write("Infelizmente você está reprovado(a) sem direito a prova final de recuperação!")
             st.write("Motivo: Média anual <2.5")
         elif( media_anual>=2.5 and media_anual<6.0):
             st.write("você vai precisar fazer a prova final de recuperação.")
