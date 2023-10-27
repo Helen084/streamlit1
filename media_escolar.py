@@ -6,9 +6,9 @@ st.set_page_config(page_title="EEMP 2023")
 st.title("Simulador da média escolar na Rede Estadual do RN")
 st.write ("Autor: Heleno Carlos. e-mail: helenoneto524@educar.rn.gov.br")
 st.write("Importante lembrar: Cuidado com as faltas, pois a frequência mínima para ser aprovado é de 75% .")
-st.write("Vamos fazer uma simulação do  cálculo da média ?")
+st.write("Vamos fazer uma simulação do  cálculo da média?")
 
-
+st.subheader('Simule e observe a meta sugerida para passar por média:', divider='rainbow')
 with st.container():
 
     bim1 = (st.number_input("Digite a sua nota do 1ª Bimestre",min_value=0.,max_value=10.,step=0.1, format="%.1f"))
@@ -56,7 +56,6 @@ with st.container():
         else:
             st.write("Parabéns você está aprovado(a) por nota!")
 
-st.write("Clique aqui --> [Sigeduc-RN](https://sigeduc.rn.gov.br/sigeduc/verTelaLogin.do)")
 
 
 
