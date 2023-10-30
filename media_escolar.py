@@ -1,7 +1,7 @@
 import math
 import streamlit as st
 
-st.set_page_config(page_title="EEMP 2023")
+st.set_page_config(page_title="Simula Média RN")
 #st.date_input(value="today",format="DD/MM/YYYY")
 st.title("Simulador da média escolar na Rede Estadual do RN")
 st.write ("Autor: Heleno Carlos. e-mail: helenoneto524@educar.rn.gov.br")
