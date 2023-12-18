@@ -39,17 +39,17 @@ with st.container():
     bim4 = (st.number_input("Digite a sua nota do 4ª Bimestre", min_value=0., max_value=10.,step=0.1, format="%.1f"))
     #st.write("Você obtve {:.1f} ponto(s) e para passar por média precisa:".format(bim4))
     media_anual = (bim1 + bim2 + bim3 + bim4) / 4
-    media_anual = math.ceil(media_anual * 10)
-    media_anual = media_anual / 10
+    #media_anual = math.ceil(media_anual * 10)
+    #media_anual = media_anual / 10
 
 
     if bim4 != 0:
-        st.write("Sua média anual: {} ponto(s).".format(media_anual))
+        st.write("Sua média anual: {:.1f} ponto(s).".format(media_anual))
 
         if (media_anual)<2.5:
             st.write("Infelizmente você está reprovado(a) sem direito a prova final de recuperação!")
             st.write("Motivo: Média anual <2.5")
-        elif( media_anual>=2.5 and media_anual<6.0):
+        elif( media_anual>=2.5 and media_anual<5.96):
             st.write("você vai precisar fazer a prova final de recuperação.")
             nota_pf = 15-(2*media_anual)
             st.write("Na prova final você precisará tirar {:.1f} pontos  para ser aprovado(a)!".format(nota_pf))
