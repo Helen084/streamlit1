@@ -4,8 +4,9 @@ import streamlit as st
 st.set_page_config(page_title="Simula Média RN")
 #st.date_input(value="today",format="DD/MM/YYYY")
 st.title("Simulador da média escolar na Rede Estadual do RN")
-st.write ("Autor: Heleno Carlos. e-mail: helenoneto524@educar.rn.gov.br")
+st.write ("Autor: Heleno Carlos. e-mail: heleno.1347578@educar.rn.gov.br")
 st.write("Importante lembrar: Cuidado com as faltas, pois a frequência mínima para ser aprovado é de 75% .")
+st.write("A frequência mínima exigida para receber o benefício do Programa Pé-de-Meia é de 80% de presença nas aulas em cada mês")
 st.write("Vamos fazer uma simulação do  cálculo da média?")
 
 st.subheader('Simule e observe a meta sugerida para passar por média:', divider='rainbow')
